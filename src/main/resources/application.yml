@@ -9,7 +9,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:/com/example/mapper/*.xml
-  type-aliases-package: com.example.dataJDBC
+  type-aliases-package: com.example.entity
   
 logging:
   level:
