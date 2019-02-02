@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.example.entity.Employee;
 
-public interface EmployeeRepository extends CrudRepository<Employee, Long> {
+public interface EmployeeRepository extends CrudRepository<Employee, Long>, EmployeeRepositoryExtension {
 	@Query("SELECT * FROM employee WHERE first_name = :firstName")
 	public List<Employee> findByFirstName(@Param("firstName") String firstName);
 }

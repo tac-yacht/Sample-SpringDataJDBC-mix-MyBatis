@@ -34,4 +34,9 @@ public class Controller {
 		return repo.findByFirstName(name);
 	}
 
+	@GetMapping("/findByLastName")
+	public Object findByLastName(@RequestParam String name) {
+		log.debug("call mybatis");
+		return repo.findByLastName(name);
+	}
 }
