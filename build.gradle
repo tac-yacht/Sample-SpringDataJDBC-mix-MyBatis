@@ -32,8 +32,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
-	// https://mvnrepository.com/artifact/org.springframework.data/spring-data-jdbc
-	compile group: 'org.springframework.data', name: 'spring-data-jdbc', version: '1.0.4.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisVersion}"
 	providedRuntime 'mysql:mysql-connector-java:8.0.14'
 
