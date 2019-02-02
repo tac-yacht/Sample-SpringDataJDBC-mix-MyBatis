@@ -1,0 +1,17 @@
+spring:
+  main:
+    banner-mode: "OFF"
+  datasource:
+    url: jdbc:mysql://localhost/sample?serverTimezone=UTC
+    username: sample
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/com/example/mapper/*.xml
+  type-aliases-package: com.example.dataJDBC
+  
+logging:
+  level:
+   org.springframework: debug
+   com.example: debug
